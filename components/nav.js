@@ -1,21 +1,19 @@
 import Link from 'next/link'
 import styles from 'styles/nav.module.css'
 
-export default fanction Nav() {
-	return (
-	 <nav>
-	   <ul className={style.list}>
-	     <li>
-		<Link href="/">
-		 <a>Home</a>
-	        </Link>
-	     </li>
-	     <li>
-
-	    </li>
-	    <li>
-	    </li>
-	  </ul>
-	 </nav> 	
-	)
-}	
+const Nav = () => (
+  <nav>
+    <ul className={styles.list}>
+      <li>
+        <Link href='/'>Home</Link>
+      </li>
+      <li>
+        <Link href='/about'>About</Link>
+      </li>
+      <li>
+        <Link href='blog'>Blog</Link>
+      </li>
+    </ul>
+  </nav>
+)
+export default Nav
